@@ -10,7 +10,7 @@
 
 module.exports = (robot) ->
    robot.hear /sync/i, (res) ->
-     res.send "com.ibm.ws.management.*=all:com.ibm.websphere.management.*=all"
+     res.send "```com.ibm.ws.management.*=all:com.ibm.websphere.management.*=all```"
   #
   # robot.respond /open the (.*) doors/i, (res) ->
   #   doorType = res.match[1]
