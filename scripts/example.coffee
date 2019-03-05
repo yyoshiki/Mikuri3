@@ -9,8 +9,8 @@
 #   These are from the scripting documentation: https://github.com/github/hubot/blob/master/docs/scripting.md
 
 module.exports = (robot) ->
-   robot.hear /badger/i, (res) ->
-     res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
+   robot.hear /sync/i, (res) ->
+     res.send "com.ibm.ws.management.*=all:com.ibm.websphere.management.*=all"
   #
   # robot.respond /open the (.*) doors/i, (res) ->
   #   doorType = res.match[1]
