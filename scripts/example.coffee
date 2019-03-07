@@ -11,6 +11,8 @@
 module.exports = (robot) ->
    robot.hear /sync/i, (res) ->
      res.send "```com.ibm.ws.management.*=all:com.ibm.websphere.management.*=all```"
+   robot.hear /init/i, (res) ->
+     res.send "```egrep -r 'TRAS0017I|e-business' ./* ```"
   #
   # robot.respond /open the (.*) doors/i, (res) ->
   #   doorType = res.match[1]
