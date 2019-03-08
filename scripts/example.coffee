@@ -13,6 +13,8 @@ module.exports = (robot) ->
      res.send "```com.ibm.ws.management.*=all:com.ibm.websphere.management.*=all```"
    robot.hear /init/i, (res) ->
      res.send "```egrep -r 'TRAS0017I|e-business' ./* ```"
+   robot.hear /fup/i, (res) ->
+     res.send "Would you please let us know the status? If you have any thing that we can assist with, please feel free to let us know."
   #
   # robot.respond /open the (.*) doors/i, (res) ->
   #   doorType = res.match[1]
